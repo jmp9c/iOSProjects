@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "47A74B171C98805800692961"
-               BuildableName = "Timer.app"
-               BlueprintName = "Timer"
-               ReferencedContainer = "container:Timer.xcodeproj">
+               BuildableName = "Counter.app"
+               BlueprintName = "Counter"
+               ReferencedContainer = "container:Counter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47A74B171C98805800692961"
-            BuildableName = "Timer.app"
-            BlueprintName = "Timer"
-            ReferencedContainer = "container:Timer.xcodeproj">
+            BuildableName = "Counter.app"
+            BlueprintName = "Counter"
+            ReferencedContainer = "container:Counter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47A74B171C98805800692961"
-            BuildableName = "Timer.app"
-            BlueprintName = "Timer"
-            ReferencedContainer = "container:Timer.xcodeproj">
+            BuildableName = "Counter.app"
+            BlueprintName = "Counter"
+            ReferencedContainer = "container:Counter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "47A74B171C98805800692961"
-            BuildableName = "Timer.app"
-            BlueprintName = "Timer"
-            ReferencedContainer = "container:Timer.xcodeproj">
+            BuildableName = "Counter.app"
+            BlueprintName = "Counter"
+            ReferencedContainer = "container:Counter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

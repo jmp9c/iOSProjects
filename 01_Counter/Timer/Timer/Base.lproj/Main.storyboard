@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C O U N T E R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceb-9f-fhh">
+                                <rect key="frame" x="246" y="526" width="109" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Nyc-an-bEi"/>
+                                    <constraint firstAttribute="width" constant="109" id="Vhu-xU-Okk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch anywhere on the screen to start/stop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSW-wP-MDK">
+                                <rect key="frame" x="20" y="542" width="560" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.37520451570680624" green="0.37520451570680624" blue="0.37520451570680624" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISw-3O-XuE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="250"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rB-fJ-2X8"/>
+                                    <outletCollection property="gestureRecognizers" destination="r9z-Eq-ciG" appends="YES" id="D25-Pf-msf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press to reset counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAY-Do-0Bp">
+                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.37520451570000002" green="0.37520451570000002" blue="0.37520451570000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ceb-9f-fhh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="506" id="0m4-Am-UD2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bSW-wP-MDK" secondAttribute="bottom" constant="37" id="3kT-nP-v34"/>
+                            <constraint firstItem="ISw-3O-XuE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9SN-04-U1F"/>
+                            <constraint firstAttribute="trailing" secondItem="ISw-3O-XuE" secondAttribute="trailing" id="AQH-Oc-MxQ"/>
+                            <constraint firstItem="ISw-3O-XuE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BVn-Gs-YrM"/>
+                            <constraint firstItem="bSW-wP-MDK" firstAttribute="centerX" secondItem="Ceb-9f-fhh" secondAttribute="centerX" id="K2B-xj-n8d"/>
+                            <constraint firstAttribute="bottom" secondItem="XAY-Do-0Bp" secondAttribute="bottom" constant="20" symbolic="YES" id="KU1-U8-Ufn"/>
+                            <constraint firstItem="bSW-wP-MDK" firstAttribute="trailing" secondItem="XAY-Do-0Bp" secondAttribute="trailing" id="OUo-sl-Ggf"/>
+                            <constraint firstItem="ISw-3O-XuE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XfS-ov-oBq"/>
+                            <constraint firstItem="XAY-Do-0Bp" firstAttribute="top" secondItem="Ceb-9f-fhh" secondAttribute="bottom" constant="12" id="dQt-Wq-CgU"/>
+                            <constraint firstItem="ISw-3O-XuE" firstAttribute="centerX" secondItem="bSW-wP-MDK" secondAttribute="centerX" id="hFY-Tb-auR"/>
+                            <constraint firstItem="bSW-wP-MDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hHD-S4-7SX"/>
+                            <constraint firstItem="bSW-wP-MDK" firstAttribute="leading" secondItem="XAY-Do-0Bp" secondAttribute="leading" id="p5T-7G-GgO"/>
+                            <constraint firstItem="bSW-wP-MDK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="522" id="r9P-96-IqL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonTItle" destination="ISw-3O-XuE" id="lw8-Vn-LeV"/>
+                    </connections>
+                </viewController>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch anywhere on the screen to start/stop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uMe-au-vdy">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" red="0.37520451570000002" green="0.37520451570000002" blue="0.37520451570000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch anywhere on the screen to start/stop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SgY-9u-KxF">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" red="0.37520451570000002" green="0.37520451570000002" blue="0.37520451570000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="r9z-Eq-ciG">
+                    <connections>
+                        <action selector="LongPress:" destination="BYZ-38-t0r" id="6MJ-UY-flp"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="380" y="295"/>
+        </scene>
+    </scenes>
+</document>

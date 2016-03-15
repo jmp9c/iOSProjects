@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Timer.xcodeproj">
+      location = "self:/Users/johnpeden/Developer/iOSProjects/01_Timer/Timer/Counter.xcodeproj">
    </FileRef>
 </Workspace>
