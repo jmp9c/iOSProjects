@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var TotalAmount: UILabel!
     @IBOutlet weak var UserAmount: UITextField!
     @IBOutlet weak var PercentageSlider: UISlider!
+    @IBOutlet weak var EstEggImg: UIImageView!
+    
     var PercentageAmount: Int {
             return Int(100 * PercentageSlider.value)
     }
@@ -36,6 +38,11 @@ class ViewController: UIViewController {
         super.touchesBegan(touches, withEvent: event)
     }
     
+    @IBAction func LongPress(sender: UILongPressGestureRecognizer) {
+        UserAmount.text = nil
+        CalculateTipPercentageAmount()
+        CalculateTotalAmount()
+    }
     @IBAction func UserEditedPrice(sender: UITextField) {
         /* Compute Tip Percentage Amount */
         CalculateTipPercentageAmount()
@@ -72,5 +79,8 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func EasterEgg(sender: UIPinchGestureRecognizer) {
+        EstEggImg.image = UIImage(named: "Pepe_rare.png")
+    }
 
 }

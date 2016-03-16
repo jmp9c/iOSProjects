@@ -12,6 +12,7 @@
 		475748DC1C98E40D00496A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475748DA1C98E40D00496A7A /* Main.storyboard */; };
 		475748DE1C98E40D00496A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475748DD1C98E40D00496A7A /* Assets.xcassets */; };
 		475748E11C98E40D00496A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475748DF1C98E40D00496A7A /* LaunchScreen.storyboard */; };
+		475748E91C9901DF00496A7A /* Pepe_rare.png in Resources */ = {isa = PBXBuildFile; fileRef = 475748E81C9901DF00496A7A /* Pepe_rare.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		475748DD1C98E40D00496A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475748E01C98E40D00496A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475748E21C98E40D00496A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475748E81C9901DF00496A7A /* Pepe_rare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pepe_rare.png; path = ../../../../../Downloads/Pepe_rare.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				475748D61C98E40D00496A7A /* AppDelegate.swift */,
 				475748D81C98E40D00496A7A /* ViewController.swift */,
 				475748DA1C98E40D00496A7A /* Main.storyboard */,
+				475748E81C9901DF00496A7A /* Pepe_rare.png */,
 				475748DD1C98E40D00496A7A /* Assets.xcassets */,
 				475748DF1C98E40D00496A7A /* LaunchScreen.storyboard */,
 				475748E21C98E40D00496A7A /* Info.plist */,
@@ -125,6 +128,7 @@
 				475748E11C98E40D00496A7A /* LaunchScreen.storyboard in Resources */,
 				475748DE1C98E40D00496A7A /* Assets.xcassets in Resources */,
 				475748DC1C98E40D00496A7A /* Main.storyboard in Resources */,
+				475748E91C9901DF00496A7A /* Pepe_rare.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
