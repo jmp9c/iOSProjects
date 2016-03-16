@@ -80,6 +80,8 @@ class ViewController: UIViewController {
     /* Begin Function Definitions */
     func storeGrades() {
         
+        // Yay I love hardcoding...
+        
         grades.append(gpaDictionary[GradeTV1.text!]!)
         grades.append(gpaDictionary[GradeTV2.text!]!)
         grades.append(gpaDictionary[GradeTV3.text!]!)
