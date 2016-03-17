@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Final GPA Label to display GPA
+    @IBOutlet weak var gpaLabel: UILabel!
+    
     /* Declare the Text Fields */
     // Accidentally named them TV instead of TF
     // Grade
@@ -58,8 +61,9 @@ class ViewController: UIViewController {
     ]
     
    /* Declare variables */
-    var gwa: Double
-    var gpa: Double
+    var gwa: Double = 0.0
+    var gpa: Double = 0.0
+    var sumOfCredits: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,15 +76,24 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startCalculation(sender: UIButton) {
+        gpa = 0.0
+        gwa = 0.0
+        sumOfCredits = 0
+        grades.removeAll()
+        creditHours.removeAll()
+        arrayforGWA.removeAll()
+        
         storeGrades()
         storeCreditHours()
-        //calculateGPA()
+        calculateGPA()
+        gpaLabel.text = String(gpa)
     }
     
     func calculateGPA() {
          multiplyAndSumArrays()
-        // sumCreditHours()
-        // divideSumsOfArrays()
+         sumCreditHours()
+         divideSumsOfArrays()
+        
     }
    
     /* Begin Function Definitions */
@@ -150,7 +163,7 @@ class ViewController: UIViewController {
         
         /* Multiply grade value * credit hours and store it in an array */
         if grades.count == creditHours.count {
-            for x in creditHours {
+            for x in 0..<creditHours.count {
                 multiple = grades[x] * Double(creditHours[x])
                 arrayforGWA.append(multiple)
             }
@@ -163,9 +176,8 @@ class ViewController: UIViewController {
         }
     }
     
+    func sumCreditHours() { sumOfCredits = creditHours.reduce(0, combine: +) }
     
-        
-    
-
+    func divideSumsOfArrays() { gpa  = gwa / Double(sumOfCredits) }
 }
 
