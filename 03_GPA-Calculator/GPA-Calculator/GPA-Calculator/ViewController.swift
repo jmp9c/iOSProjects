@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     // Arrays
     var grades = [Double]()
     var creditHours = [Int]()
+    var arrayforGWA = [Double]()
     
     // Dictionary
     var gpaDictionary = [
@@ -55,6 +56,11 @@ class ViewController: UIViewController {
             "D"  : 1.0,
             "F"  : 0.0
     ]
+    
+   /* Declare variables */
+    var gwa: Double
+    var gpa: Double
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -67,12 +73,12 @@ class ViewController: UIViewController {
 
     @IBAction func startCalculation(sender: UIButton) {
         storeGrades()
-        //storeCreditHours()
+        storeCreditHours()
         //calculateGPA()
     }
     
     func calculateGPA() {
-        // multiplyAndSumArrays()
+         multiplyAndSumArrays()
         // sumCreditHours()
         // divideSumsOfArrays()
     }
@@ -80,17 +86,23 @@ class ViewController: UIViewController {
     /* Begin Function Definitions */
     func storeGrades() {
         
-        // Yay I love hardcoding...
+       
+        /* What's happening here is, because not all the textfields are being used,
+            I have to check and see if the textfield.text != nil, which is being done with
+            putGradesInArray. Unfortunately I couldn't make a loop because for somereason
+            I couldn't get tags to work :/.
+
+        */
         
-        grades.append(gpaDictionary[GradeTV1.text!]!)
-        grades.append(gpaDictionary[GradeTV2.text!]!)
-        grades.append(gpaDictionary[GradeTV3.text!]!)
-        grades.append(gpaDictionary[GradeTV4.text!]!)
-        grades.append(gpaDictionary[GradeTV5.text!]!)
-        grades.append(gpaDictionary[GradeTV6.text!]!)
-        grades.append(gpaDictionary[GradeTV7.text!]!)
-        grades.append(gpaDictionary[GradeTV8.text!]!)
-        grades.append(gpaDictionary[GradeTV9.text!]!)
+        putGradesInArray(GradeTV1)
+        putGradesInArray(GradeTV2)
+        putGradesInArray(GradeTV3)
+        putGradesInArray(GradeTV4)
+        putGradesInArray(GradeTV5)
+        putGradesInArray(GradeTV6)
+        putGradesInArray(GradeTV7)
+        putGradesInArray(GradeTV8)
+        putGradesInArray(GradeTV9)
         
        // Print out array to Console for debugging
         for x in grades {
@@ -98,7 +110,62 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    func putGradesInArray(tf: UITextField){
+        if let s = tf.text{
+            if let a = gpaDictionary[s]{
+                grades.append(a)
+            }
+        }
+    }
+    
+    func storeCreditHours(){
+        
+        putCreditHoursInArray(CreditHoursTF1)
+        putCreditHoursInArray(CreditHoursTF2)
+        putCreditHoursInArray(CreditHoursTF3)
+        putCreditHoursInArray(CreditHoursTF4)
+        putCreditHoursInArray(CreditHoursTF5)
+        putCreditHoursInArray(CreditHoursTF6)
+        putCreditHoursInArray(CreditHoursTF7)
+        putCreditHoursInArray(CreditHoursTF8)
+        putCreditHoursInArray(CreditHoursTF9)
+        
+        for x in creditHours {
+            print("\(x)")
+        }
+    }
+    
+    func putCreditHoursInArray(tf: UITextField){
+        if let s = tf.text{
+            if let x: Int = Int(s) {
+             creditHours.append(x)
+            }
+            
+        }
+    }
+    
+    func multiplyAndSumArrays(){
+        var multiple: Double
+        
+        /* Multiply grade value * credit hours and store it in an array */
+        if grades.count == creditHours.count {
+            for x in creditHours {
+                multiple = grades[x] * Double(creditHours[x])
+                arrayforGWA.append(multiple)
+            }
+            
+            /* This next function sums all the elements in the array using reduce.
+                I don't know why or how, but....just trust me */
+            
+            gwa = arrayforGWA.reduce(0, combine: +)
 
+        }
+    }
+    
+    
+        
+    
 
 }
 
