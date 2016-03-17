@@ -43,10 +43,15 @@ class ViewController: UIViewController {
     var grades = [Double]()
     var creditHours = [Int]()
     var arrayforGWA = [Double]()
+    var arrayOfPossibleEntries = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
+    @IBOutlet var collectionOfGradeTF: Array<UITextField>?
+    @IBOutlet var collectionOfCreditHoursTF: Array<UITextField>?
     
+
     // Dictionary
     var gpaDictionary = [
         
+            "A+" : 4.0,
             "A"  : 4.0,
             "A-" : 3.67,
             "B+" : 3.33,
@@ -74,19 +79,63 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func startCalculation(sender: UIButton) {
+    
+    
+    func addAllTextFields() {
+        collectionOfGradeTF?.append(GradeTV1)
+        collectionOfGradeTF?.append(GradeTV2)
+        collectionOfGradeTF?.append(GradeTV3)
+        collectionOfGradeTF?.append(GradeTV4)
+        collectionOfGradeTF?.append(GradeTV5)
+        collectionOfGradeTF?.append(GradeTV6)
+        collectionOfGradeTF?.append(GradeTV7)
+        collectionOfGradeTF?.append(GradeTV8)
+        collectionOfGradeTF?.append(GradeTV9)
+        
+        collectionOfCreditHoursTF?.append(CreditHoursTF1)
+        collectionOfCreditHoursTF?.append(CreditHoursTF2)
+        collectionOfCreditHoursTF?.append(CreditHoursTF3)
+        collectionOfCreditHoursTF?.append(CreditHoursTF4)
+        collectionOfCreditHoursTF?.append(CreditHoursTF5)
+        collectionOfCreditHoursTF?.append(CreditHoursTF6)
+        collectionOfCreditHoursTF?.append(CreditHoursTF7)
+        collectionOfCreditHoursTF?.append(CreditHoursTF8)
+        collectionOfCreditHoursTF?.append(CreditHoursTF9)
+    }
+    
+    func printTFText() {
+        for i in 0..<(collectionOfGradeTF?.count)!{
+            print("\(collectionOfGradeTF![i].text)")
+        }
+    }
+    
+    func clearAll() {
         gpa = 0.0
         gwa = 0.0
         sumOfCredits = 0
         grades.removeAll()
         creditHours.removeAll()
         arrayforGWA.removeAll()
+    }
+
+    @IBAction func startCalculation(sender: UIButton) {
+        clearAll()
+        
         
         storeGrades()
         storeCreditHours()
         calculateGPA()
         gpaLabel.text = String(gpa)
+    }
+    
+    func checkUserInput(s: String){
+        for i in 0..<arrayOfPossibleEntries.count {
+            if s == arrayOfPossibleEntries[i]{
+                return
+            }
+            
+        }
+        gpaLabel.text = "Sorry please enter a valid grade. Please delete all spaces"
     }
     
     func calculateGPA() {
@@ -106,6 +155,8 @@ class ViewController: UIViewController {
             I couldn't get tags to work :/.
 
         */
+        
+        
         
         putGradesInArray(GradeTV1)
         putGradesInArray(GradeTV2)
