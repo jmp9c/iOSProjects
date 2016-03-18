@@ -19,7 +19,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /* Begin Calculator */
 
+    @IBOutlet weak var display: UILabel! // Main Display
+    var userIsInTheMiddleOfTypingANumber = false
 
+    
+    @IBAction func calcButtonPressed(sender: UIButton) {
+        let digit = sender.currentTitle!
+        
+        if userIsInTheMiddleOfTypingANumber {
+            display.text = display.text! + digit
+        } else {
+            display.text = digit
+            userIsInTheMiddleOfTypingANumber = true
+        }
+        
+        
+    }
+
+    @IBAction func enter() {
+        
+    }
 }
 
