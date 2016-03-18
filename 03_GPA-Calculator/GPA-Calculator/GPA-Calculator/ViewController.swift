@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // Final GPA Label to display GPA
     @IBOutlet weak var gpaLabel: UILabel!
@@ -46,7 +46,6 @@ class ViewController: UIViewController {
     var arrayOfPossibleEntries = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"]
     @IBOutlet var collectionOfGradeTF: Array<UITextField>?
     @IBOutlet var collectionOfCreditHoursTF: Array<UITextField>?
-    
 
     // Dictionary
     var gpaDictionary = [
@@ -72,41 +71,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let pickerview = UIPickerView()
+        pickerview.delegate = self
+        GradeTV1.inputView = pickerview
+        GradeTV2.inputView = pickerview
+        GradeTV3.inputView = pickerview
+        GradeTV4.inputView = pickerview
+        GradeTV5.inputView = pickerview
+        GradeTV6.inputView = pickerview
+        GradeTV7.inputView = pickerview
+        GradeTV8.inputView = pickerview
+        GradeTV9.inputView = pickerview
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    func addAllTextFields() {
-        collectionOfGradeTF?.append(GradeTV1)
-        collectionOfGradeTF?.append(GradeTV2)
-        collectionOfGradeTF?.append(GradeTV3)
-        collectionOfGradeTF?.append(GradeTV4)
-        collectionOfGradeTF?.append(GradeTV5)
-        collectionOfGradeTF?.append(GradeTV6)
-        collectionOfGradeTF?.append(GradeTV7)
-        collectionOfGradeTF?.append(GradeTV8)
-        collectionOfGradeTF?.append(GradeTV9)
-        
-        collectionOfCreditHoursTF?.append(CreditHoursTF1)
-        collectionOfCreditHoursTF?.append(CreditHoursTF2)
-        collectionOfCreditHoursTF?.append(CreditHoursTF3)
-        collectionOfCreditHoursTF?.append(CreditHoursTF4)
-        collectionOfCreditHoursTF?.append(CreditHoursTF5)
-        collectionOfCreditHoursTF?.append(CreditHoursTF6)
-        collectionOfCreditHoursTF?.append(CreditHoursTF7)
-        collectionOfCreditHoursTF?.append(CreditHoursTF8)
-        collectionOfCreditHoursTF?.append(CreditHoursTF9)
-    }
-    
-    func printTFText() {
-        for i in 0..<(collectionOfGradeTF?.count)!{
-            print("\(collectionOfGradeTF![i].text)")
-        }
     }
     
     func clearAll() {
@@ -120,8 +101,6 @@ class ViewController: UIViewController {
 
     @IBAction func startCalculation(sender: UIButton) {
         clearAll()
-        
-        
         storeGrades()
         storeCreditHours()
         calculateGPA()
@@ -230,5 +209,28 @@ class ViewController: UIViewController {
     func sumCreditHours() { sumOfCredits = creditHours.reduce(0, combine: +) }
     
     func divideSumsOfArrays() { gpa  = gwa / Double(sumOfCredits) }
-}
 
+
+/* PickerView Things */
+    func numberOfComponentsInPickerView(pickerview: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrayOfPossibleEntries.count
+    
+    }
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrayOfPossibleEntries[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if GradeTV1.tag == 1 {
+            GradeTV1.text = arrayOfPossibleEntries[row]
+            
+        }
+        else if GradeTV2.tag == 2 {
+            GradeTV2.text = arrayOfPossibleEntries[row]
+        }
+    }
+}
