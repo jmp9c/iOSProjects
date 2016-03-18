@@ -212,6 +212,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
 
 /* PickerView Things */
+    // I imagine, due to lack of knowledge of delegate/protocol stuff
+    // That these must be implemented due to it being in some protocol somewhere
     func numberOfComponentsInPickerView(pickerview: UIPickerView) -> Int {
         return 1
     }
