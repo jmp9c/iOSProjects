@@ -1,24 +1,27 @@
 //
-//  TVController.swift
-//  TableViewPractice
+//  TableViewController.swift
+//  tableView
 //
-//  Created by John Peden on 3/17/16.
+//  Created by John Peden on 3/18/16.
 //  Copyright © 2016 John Peden. All rights reserved.
 //
 
 import UIKit
 
-class TVController: UITableViewController {
+class TableViewController: UITableViewController {
     
     let section = ["pizza", "deep dish pizza", "calzone"]
     
-    let items = [["Margarita", "BBQ Chicken", "Pepperoni"], ["sausage", "meat lovers", "veggie lovers"], ["sausage", "chicken pesto", "prawns, mushrooms"]]
+    let items = [["Margarita", "BBQ Chicken", "Pepperoni"], ["sausage", "meat lovers", "veggie lovers"], ["sausage", "chicken pesto", "prawns", "mushrooms"]]
+    
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return self.section[section]
         
     }
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,17 +47,19 @@ class TVController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.items.count
-    }
+        return self.items.count    }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("tableCell")
+        
+            cell!.textLabel?.text = self.items[indexPath.section][indexPath.row]
+        
 
         // Configure the cell...
-        cell.textLabel?.text = self.items[indexPath.section][indexPath.row]
+        
 
-        return cell
+        return cell!
     }
     
 
@@ -65,6 +70,7 @@ class TVController: UITableViewController {
         return true
     }
     */
+
 
     /*
     // Override to support editing the table view.

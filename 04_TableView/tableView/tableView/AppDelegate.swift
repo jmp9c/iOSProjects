@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  TableViewPractice
+//  tableView
 //
-//  Created by John Peden on 3/17/16.
+//  Created by John Peden on 3/18/16.
 //  Copyright © 2016 John Peden. All rights reserved.
 //
 
