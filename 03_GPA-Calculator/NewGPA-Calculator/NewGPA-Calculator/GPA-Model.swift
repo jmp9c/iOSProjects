@@ -27,15 +27,15 @@ class GPA {
     */
     
     /* Variables */
-    private var gpa: Double
-    private var gwa: Double
+    private var gpa: Double = 0.0
+    private var gwa: Double = 0.0
     
     /* Useful Values */
-    private var sumOfCreditHours: Int
+    private var sumOfCreditHours: Int = 0
     
     /* Two Arrays; one to store grades, the other credit hours */
-    private var grades = [Double]()
-    private var creditHours = [Int]()
+    private var grades = [String]()
+    private var creditHours = [Int]() 
     
     /* A Dictionary representing the grade to decimal value */
     private let gradesDoubleDictionary = [
@@ -54,7 +54,14 @@ class GPA {
         "F"  : 0.0
     ]
     
-    init(withArrayOfGrades grades: [Double], withArrayOfCreditHours creditHours: [Int]){
+    init() {
+        gpa = 0.0
+        gwa = 0.0
+        sumOfCreditHours = 0
+        grades = []
+        creditHours = []
+    }
+    init(withArrayOfGrades grades: [String], withArrayOfCreditHours creditHours: [Int]){
         self.grades = grades
         self.creditHours = creditHours
         self.sumOfCreditHours = creditHours.reduce(0, combine: +)
@@ -63,16 +70,26 @@ class GPA {
     }
     
     /* Methods */
-    func calculateGPAWith(arrayOfGrades grades: [Double], andArrayOfCreditHours creditHours: [Int]) -> Double {
+    /* Calculates the gwa, then finds the gpa and returns gpa as Double */
+    func calculateGPA() -> Double {
+        gwa = calculateGWA(self.grades, creditHours: self.creditHours)
+        let g = gwa / Double(self.sumOfCreditHours)
+        return g
+    }
+    
+    /* Calculates the GPA for a blank GPA */
+    func calculateGPAWith(arrayOfGrades grades: [String], andArrayOfCreditHours creditHours: [Int]) -> Double {
         gwa = calculateGWA(grades, creditHours: creditHours)
         gpa = gwa / Double(sumOfCreditHours)
         return gpa
     }
     
-    private func calculateGWA(grades: [Double], creditHours: [Int]) -> Double {
+    /* This method can be dangerous... */
+    private func calculateGWA(grades: [String], creditHours: [Int]) -> Double {
         if grades.count == creditHours.count {
             for var i = 0; i < grades.count; i++ {
-                gwa = gwa + (grades[i] * Double(creditHours[i]))
+                let gradeValue = gradesDoubleDictionary[grades[i]]
+                gwa = gwa + (gradeValue! * Double(creditHours[i]))
             }
            return gwa
         } else {
@@ -80,9 +97,4 @@ class GPA {
             return 999.9999999      // This is for error referencing
         }
     }
-
-    
-    
-    
-    
 }

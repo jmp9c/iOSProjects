@@ -21,5 +21,26 @@ class ViewController: UIViewController {
 //    }
 
 
+    
+    
+    var gpa = GPA(withArrayOfGrades: ["A", "B+", "A-", "C-"], withArrayOfCreditHours: [4, 3, 4])
+    var gpa2 = GPA()
+    func testGPA() {
+        let g = gpa.calculateGPA()
+        let g2 = gpa2.calculateGPAWith(arrayOfGrades: ["A", "A"], andArrayOfCreditHours: [4, 4])
+        
+        print("\(g)")
+        print("\(g2)")
+    }
+    
+    @IBAction func calculate() {
+       testGPA()
+    }
+    
+    
+    
+    
+    
+    
 }
 
