@@ -42,6 +42,7 @@ class ViewController: UIViewController {
     @IBAction func clear() {
         userIsInTheMiddleOfTypingANumber = false
         brain.clear()
+        feed.text = ""
         
         display.text = "0.0"
         
