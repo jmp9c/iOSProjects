@@ -54,13 +54,6 @@ class GPA {
         "F"  : 0.0
     ]
     
-    init() {
-        gpa = 0.0
-        gwa = 0.0
-        sumOfCreditHours = 0
-        grades = []
-        creditHours = []
-    }
     init(withArrayOfGrades grades: [String], withArrayOfCreditHours creditHours: [Int]){
         self.grades = grades
         self.creditHours = creditHours
@@ -87,7 +80,7 @@ class GPA {
     /* This method can be dangerous... */
     private func calculateGWA(grades: [String], creditHours: [Int]) -> Double {
         if grades.count == creditHours.count {
-            for var i = 0; i < grades.count; i++ {
+            for i in 0..<grades.count {
                 let gradeValue = gradesDoubleDictionary[grades[i]]
                 gwa = gwa + (gradeValue! * Double(creditHours[i]))
             }
