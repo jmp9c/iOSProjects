@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4701D72E1CA71D1600DB3F00 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701D72D1CA71D1600DB3F00 /* ContactTableViewController.swift */; };
+		4701D7301CA71EF800DB3F00 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701D72F1CA71EF800DB3F00 /* ContactViewController.swift */; };
 		4709B53C1CA70E5A00F2B166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4709B53B1CA70E5A00F2B166 /* AppDelegate.swift */; };
 		4709B5411CA70E5A00F2B166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4709B53F1CA70E5A00F2B166 /* Main.storyboard */; };
 		4709B5431CA70E5A00F2B166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4709B5421CA70E5A00F2B166 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4701D72D1CA71D1600DB3F00 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		4701D72F1CA71EF800DB3F00 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		4709B5381CA70E5A00F2B166 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4709B53B1CA70E5A00F2B166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4709B5401CA70E5A00F2B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				4709B53F1CA70E5A00F2B166 /* Main.storyboard */,
+				4701D72F1CA71EF800DB3F00 /* ContactViewController.swift */,
+				4701D72D1CA71D1600DB3F00 /* ContactTableViewController.swift */,
 				4709B54D1CA7109300F2B166 /* Supporting FIles */,
 			);
 			path = Contacts;
@@ -101,6 +107,7 @@
 				TargetAttributes = {
 					4709B5371CA70E5900F2B166 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 26V332SYBX;
 					};
 				};
 			};
@@ -140,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4701D72E1CA71D1600DB3F00 /* ContactTableViewController.swift in Sources */,
 				4709B53C1CA70E5A00F2B166 /* AppDelegate.swift in Sources */,
+				4701D7301CA71EF800DB3F00 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jped.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jped.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +303,7 @@
 				4709B54C1CA70E5A00F2B166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
