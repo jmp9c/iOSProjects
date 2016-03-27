@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XSD-Yp-cYo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Bible Doctrine-->
+        <scene sceneID="8eG-9y-Xf6">
+            <objects>
+                <viewController id="TUo-xV-CGl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z9c-9R-mra"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3Q-KK-tw3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kek-hv-dqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bible Doctrine" image="cross_filled.png" selectedImage="cross_filled.png" id="WTM-OL-XiU">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.66666666666666663" green="0.55294117647058827" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hId-hh-Nfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="-58"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="IPf-YS-RMD">
+            <objects>
+                <viewController id="xzh-QK-Q8L" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xQJ-Ic-49U"/>
+                        <viewControllerLayoutGuide type="bottom" id="ec3-th-bAK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ljv-3U-Zo5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" selectedImage="home.png" id="vNQ-Kw-M9A">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.66666666666666663" green="0.55294117647058827" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIz-pf-Tib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="593"/>
+        </scene>
+        <!--Church History-->
+        <scene sceneID="smn-06-yYp">
+            <objects>
+                <viewController id="ecn-9k-ghQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PFc-8u-hAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="CU1-hM-tuD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bgh-3c-ni9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.37216726389999999" green="0.1199579791" blue="0.1798042178" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Church History" image="globe.png" selectedImage="globe.png" id="OQk-yu-xed">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.66666666666666663" green="0.55294117647058827" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fr-XV-DG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678" y="-719"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ojk-is-csa">
+            <objects>
+                <tabBarController id="XSD-Yp-cYo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4or-Md-KeU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xzh-QK-Q8L" kind="relationship" relationship="viewControllers" id="gsX-ZC-e76"/>
+                        <segue destination="ecn-9k-ghQ" kind="relationship" relationship="viewControllers" id="VbU-QV-iWA"/>
+                        <segue destination="TUo-xV-CGl" kind="relationship" relationship="viewControllers" id="Bgw-ZU-v70"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zci-vV-1B9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="-388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cross_filled.png" width="33" height="33"/>
+        <image name="globe.png" width="33" height="33"/>
+        <image name="home.png" width="33" height="33"/>
+    </resources>
+</document>
