@@ -16,6 +16,11 @@
 		4701D75E1CA7A03900DB3F00 /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4701D75D1CA7A03900DB3F00 /* home@3x.png */; };
 		4701D7611CA7ABBF00DB3F00 /* SplashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7601CA7ABBF00DB3F00 /* SplashImage.jpg */; };
 		4701D7631CA7ADCC00DB3F00 /* SplashImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7621CA7ADCC00DB3F00 /* SplashImage.png */; };
+		472CEB541CA997EB00DA35EB /* lit@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 472CEB531CA997EB00DA35EB /* lit@3x.png */; };
+		472CEB561CA99A6500DA35EB /* BibleDoctrineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB551CA99A6500DA35EB /* BibleDoctrineViewController.swift */; };
+		472CEB581CA99B7400DA35EB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB571CA99B7400DA35EB /* TabBarController.swift */; };
+		472CEB5A1CA9C1BB00DA35EB /* ChurchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB591CA9C1BB00DA35EB /* ChurchHistoryViewController.swift */; };
+		472CEB5C1CA9CDF200DA35EB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB5B1CA9CDF200DA35EB /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		4701D75D1CA7A03900DB3F00 /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home@3x.png"; path = "/var/folders/pj/9r8mb2ss2138lq72tm6wdjhm0000gn/T/iOS7/SVG/Very_Basic/home@3x.png"; sourceTree = "<absolute>"; };
 		4701D7601CA7ABBF00DB3F00 /* SplashImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SplashImage.jpg; path = ../../../../../Downloads/SplashImage.jpg; sourceTree = "<group>"; };
 		4701D7621CA7ADCC00DB3F00 /* SplashImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashImage.png; path = ../../../../../Downloads/SplashImage.png; sourceTree = "<group>"; };
+		472CEB531CA997EB00DA35EB /* lit@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lit@3x.png"; path = "../../../../../../../var/folders/pj/9r8mb2ss2138lq72tm6wdjhm0000gn/T/iOS7/SVG/Science/lit@3x.png"; sourceTree = "<group>"; };
+		472CEB551CA99A6500DA35EB /* BibleDoctrineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibleDoctrineViewController.swift; sourceTree = "<group>"; };
+		472CEB571CA99B7400DA35EB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		472CEB591CA9C1BB00DA35EB /* ChurchHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchHistoryViewController.swift; sourceTree = "<group>"; };
+		472CEB5B1CA9CDF200DA35EB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,10 @@
 			children = (
 				4701D75F1CA7AB2900DB3F00 /* Supporting Files */,
 				4701D7411CA790E200DB3F00 /* Main.storyboard */,
+				472CEB5B1CA9CDF200DA35EB /* AboutViewController.swift */,
+				472CEB591CA9C1BB00DA35EB /* ChurchHistoryViewController.swift */,
+				472CEB551CA99A6500DA35EB /* BibleDoctrineViewController.swift */,
+				472CEB571CA99B7400DA35EB /* TabBarController.swift */,
 			);
 			path = "Mr. Richardson App";
 			sourceTree = "<group>";
@@ -78,6 +92,7 @@
 				4701D75D1CA7A03900DB3F00 /* home@3x.png */,
 				4701D7441CA790E200DB3F00 /* Assets.xcassets */,
 				4701D75B1CA79D9300DB3F00 /* cross_filled@3x.png */,
+				472CEB531CA997EB00DA35EB /* lit@3x.png */,
 				4701D7591CA79D8300DB3F00 /* globe@3x.png */,
 				4701D73D1CA790E200DB3F00 /* AppDelegate.swift */,
 			);
@@ -144,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4701D7631CA7ADCC00DB3F00 /* SplashImage.png in Resources */,
+				472CEB541CA997EB00DA35EB /* lit@3x.png in Resources */,
 				4701D7481CA790E200DB3F00 /* LaunchScreen.storyboard in Resources */,
 				4701D75A1CA79D8300DB3F00 /* globe@3x.png in Resources */,
 				4701D75E1CA7A03900DB3F00 /* home@3x.png in Resources */,
@@ -161,7 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472CEB581CA99B7400DA35EB /* TabBarController.swift in Sources */,
 				4701D73E1CA790E200DB3F00 /* AppDelegate.swift in Sources */,
+				472CEB5A1CA9C1BB00DA35EB /* ChurchHistoryViewController.swift in Sources */,
+				472CEB5C1CA9CDF200DA35EB /* AboutViewController.swift in Sources */,
+				472CEB561CA99A6500DA35EB /* BibleDoctrineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +337,7 @@
 				4701D74E1CA790E200DB3F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
