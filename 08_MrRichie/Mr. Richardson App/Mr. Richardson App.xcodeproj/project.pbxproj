@@ -11,12 +11,11 @@
 		4701D7431CA790E200DB3F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7411CA790E200DB3F00 /* Main.storyboard */; };
 		4701D7451CA790E200DB3F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7441CA790E200DB3F00 /* Assets.xcassets */; };
 		4701D7481CA790E200DB3F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7461CA790E200DB3F00 /* LaunchScreen.storyboard */; };
-		4701D7611CA7ABBF00DB3F00 /* SplashImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7601CA7ABBF00DB3F00 /* SplashImage.jpg */; };
-		4701D7631CA7ADCC00DB3F00 /* SplashImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4701D7621CA7ADCC00DB3F00 /* SplashImage.png */; };
 		472CEB561CA99A6500DA35EB /* BibleDoctrineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB551CA99A6500DA35EB /* BibleDoctrineViewController.swift */; };
 		472CEB581CA99B7400DA35EB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB571CA99B7400DA35EB /* TabBarController.swift */; };
 		472CEB5A1CA9C1BB00DA35EB /* ChurchHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB591CA9C1BB00DA35EB /* ChurchHistoryViewController.swift */; };
 		472CEB5C1CA9CDF200DA35EB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472CEB5B1CA9CDF200DA35EB /* AboutViewController.swift */; };
+		473619371CAD7A70000A30EE /* SplashImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 473619361CAD7A70000A30EE /* SplashImage.png */; };
 		47505B3F1CAADAAA004EECAE /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47505B3E1CAADAAA004EECAE /* home@3x.png */; };
 		47505B411CAADAC5004EECAE /* cross_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47505B401CAADAC5004EECAE /* cross_filled@3x.png */; };
 		47505B451CAADAF1004EECAE /* generic_book_file_type_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47505B441CAADAF1004EECAE /* generic_book_file_type_filled@3x.png */; };
@@ -31,12 +30,11 @@
 		4701D7441CA790E200DB3F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4701D7471CA790E200DB3F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4701D7491CA790E200DB3F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4701D7601CA7ABBF00DB3F00 /* SplashImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SplashImage.jpg; path = ../../../../../Downloads/SplashImage.jpg; sourceTree = "<group>"; };
-		4701D7621CA7ADCC00DB3F00 /* SplashImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashImage.png; path = ../../../../../Downloads/SplashImage.png; sourceTree = "<group>"; };
 		472CEB551CA99A6500DA35EB /* BibleDoctrineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BibleDoctrineViewController.swift; sourceTree = "<group>"; };
 		472CEB571CA99B7400DA35EB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		472CEB591CA9C1BB00DA35EB /* ChurchHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchHistoryViewController.swift; sourceTree = "<group>"; };
 		472CEB5B1CA9CDF200DA35EB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		473619361CAD7A70000A30EE /* SplashImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashImage.png; sourceTree = "<group>"; };
 		47505B3E1CAADAAA004EECAE /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
 		47505B401CAADAC5004EECAE /* cross_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cross_filled@3x.png"; sourceTree = "<group>"; };
 		47505B441CAADAF1004EECAE /* generic_book_file_type_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generic_book_file_type_filled@3x.png"; sourceTree = "<group>"; };
@@ -91,9 +89,8 @@
 				47505B3E1CAADAAA004EECAE /* home@3x.png */,
 				47505B401CAADAC5004EECAE /* cross_filled@3x.png */,
 				47505B441CAADAF1004EECAE /* generic_book_file_type_filled@3x.png */,
+				473619361CAD7A70000A30EE /* SplashImage.png */,
 				47505B461CAADB19004EECAE /* globe@3x.png */,
-				4701D7601CA7ABBF00DB3F00 /* SplashImage.jpg */,
-				4701D7621CA7ADCC00DB3F00 /* SplashImage.png */,
 				4701D7461CA790E200DB3F00 /* LaunchScreen.storyboard */,
 				4701D7491CA790E200DB3F00 /* Info.plist */,
 				4701D7441CA790E200DB3F00 /* Assets.xcassets */,
@@ -161,12 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4701D7631CA7ADCC00DB3F00 /* SplashImage.png in Resources */,
+				473619371CAD7A70000A30EE /* SplashImage.png in Resources */,
 				4701D7481CA790E200DB3F00 /* LaunchScreen.storyboard in Resources */,
 				47505B3F1CAADAAA004EECAE /* home@3x.png in Resources */,
 				47505B471CAADB19004EECAE /* globe@3x.png in Resources */,
 				4701D7451CA790E200DB3F00 /* Assets.xcassets in Resources */,
-				4701D7611CA7ABBF00DB3F00 /* SplashImage.jpg in Resources */,
 				47505B411CAADAC5004EECAE /* cross_filled@3x.png in Resources */,
 				47505B451CAADAF1004EECAE /* generic_book_file_type_filled@3x.png in Resources */,
 				4701D7431CA790E200DB3F00 /* Main.storyboard in Resources */,
@@ -301,6 +297,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Mr. Richardson App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jped.Mr--Richardson-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,6 +312,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Mr. Richardson App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jped.Mr--Richardson-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";

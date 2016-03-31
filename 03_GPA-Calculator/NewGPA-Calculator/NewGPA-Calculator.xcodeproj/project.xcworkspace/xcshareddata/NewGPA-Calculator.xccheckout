@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>26F39C31-AF1B-4F6B-8E52-6369D5ACFC7B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NewGPA-Calculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A40E7D30E3D25267F039261C3F1FCE4DEE7D46A3</key>
+		<string>https://github.com/jmp9c/iOSProjects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>03_GPA-Calculator/NewGPA-Calculator/NewGPA-Calculator.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A40E7D30E3D25267F039261C3F1FCE4DEE7D46A3</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jmp9c/iOSProjects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A40E7D30E3D25267F039261C3F1FCE4DEE7D46A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A40E7D30E3D25267F039261C3F1FCE4DEE7D46A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSProjects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
