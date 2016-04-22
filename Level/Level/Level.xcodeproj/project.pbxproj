@@ -13,6 +13,7 @@
 		47A897DA1CCAB21D00D6A658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A897D91CCAB21D00D6A658 /* Assets.xcassets */; };
 		47A897DD1CCAB21D00D6A658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A897DB1CCAB21D00D6A658 /* LaunchScreen.storyboard */; };
 		47A897E51CCAB2EC00D6A658 /* MotionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A897E41CCAB2EC00D6A658 /* MotionKit.swift */; };
+		47A897E71CCAC34000D6A658 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A897E61CCAC34000D6A658 /* a.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		47A897DC1CCAB21D00D6A658 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A897DE1CCAB21D00D6A658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47A897E41CCAB2EC00D6A658 /* MotionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionKit.swift; sourceTree = "<group>"; };
+		47A897E61CCAC34000D6A658 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				47A897D41CCAB21D00D6A658 /* ViewController.swift */,
 				47A897D61CCAB21D00D6A658 /* Main.storyboard */,
 				47A897E41CCAB2EC00D6A658 /* MotionKit.swift */,
+				47A897E61CCAC34000D6A658 /* a.jpg */,
 				47A897D91CCAB21D00D6A658 /* Assets.xcassets */,
 				47A897DB1CCAB21D00D6A658 /* LaunchScreen.storyboard */,
 				47A897DE1CCAB21D00D6A658 /* Info.plist */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A897E71CCAC34000D6A658 /* a.jpg in Resources */,
 				47A897DD1CCAB21D00D6A658 /* LaunchScreen.storyboard in Resources */,
 				47A897DA1CCAB21D00D6A658 /* Assets.xcassets in Resources */,
 				47A897D81CCAB21D00D6A658 /* Main.storyboard in Resources */,
@@ -290,6 +294,7 @@
 				47A897E31CCAB21D00D6A658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

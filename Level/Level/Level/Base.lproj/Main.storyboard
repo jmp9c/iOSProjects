@@ -17,43 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-qQ-4BY">
-                                <rect key="frame" x="279" y="260" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-X4-wiK">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-lc-RWG">
-                                <rect key="frame" x="279" y="318" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fmV-Yr-LRP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="s20-X4-wiK" firstAttribute="leading" secondItem="Mtg-lc-RWG" secondAttribute="leading" id="Hdd-4n-t0A"/>
-                            <constraint firstItem="s20-X4-wiK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bJm-z3-X1e"/>
-                            <constraint firstItem="Mtg-lc-RWG" firstAttribute="top" secondItem="s20-X4-wiK" secondAttribute="bottom" constant="8" symbolic="YES" id="dwq-IO-lcS"/>
-                            <constraint firstItem="zCF-qQ-4BY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fsk-y8-U4q"/>
-                            <constraint firstItem="s20-X4-wiK" firstAttribute="top" secondItem="zCF-qQ-4BY" secondAttribute="bottom" constant="8" symbolic="YES" id="gRa-Ha-0CO"/>
-                            <constraint firstItem="zCF-qQ-4BY" firstAttribute="leading" secondItem="s20-X4-wiK" secondAttribute="leading" id="kWn-Vi-tS0"/>
+                            <constraint firstItem="fmV-Yr-LRP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Akp-ix-Bzd"/>
+                            <constraint firstItem="fmV-Yr-LRP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ash-Mm-Gec"/>
+                            <constraint firstAttribute="trailing" secondItem="fmV-Yr-LRP" secondAttribute="trailing" id="EeZ-mv-Dma"/>
+                            <constraint firstItem="fmV-Yr-LRP" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Xrm-DM-BRx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="X" destination="zCF-qQ-4BY" id="S2C-nN-VIf"/>
-                        <outlet property="Y" destination="s20-X4-wiK" id="mYr-vs-9Tf"/>
-                        <outlet property="Z" destination="Mtg-lc-RWG" id="Q6a-aM-AFL"/>
+                        <outlet property="imgv" destination="fmV-Yr-LRP" id="6yV-Fi-RfI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="213" y="232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="a.jpg" width="304" height="450"/>
+    </resources>
 </document>

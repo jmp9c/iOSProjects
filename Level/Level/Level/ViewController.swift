@@ -9,41 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet var x_label: UILabel!
+  @IBOutlet var y_label: UILabel!
+  @IBOutlet var z_label: UILabel!
+  let motionKit = MotionKit()
   
-  @IBOutlet var X: UILabel!
-
-  @IBOutlet var Y: UILabel!
-
-  @IBOutlet var Z: UILabel!
+  @IBOutlet var imgv: UIImageView!
+  @IBAction func go() {
+  }
   
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    update(); 
-      //var timer = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+    motionKit.getDeviceMotionObject(0.01){
+      (deviceMotion) -> () in
+      
+      let gravity = deviceMotion.gravity
+      let rotation = atan2(gravity.x, gravity.y) - M_PI
+      
+      self.imgv.transform = CGAffineTransformMakeRotation(CGFloat(rotation))
     
-    }
-    func update(){
-      print("hi")
-      let motionKit = MotionKit()
-      motionKit.getGyroValues(1.0){
-        (x, y, z) in
-        //Do whatever you want with the x, y and z values
-        print("\(x)")
-        self.X.text = String(Int(x))
-        self.Y.text = String(y)
-        self.Z.text = String(z)
-    }
-  
-  
-    // Do any additional setup after loading the view, typically from a nib.
-  }
+    
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
 
