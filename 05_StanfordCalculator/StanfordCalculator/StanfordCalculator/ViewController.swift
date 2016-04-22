@@ -22,8 +22,15 @@ class ViewController: UIViewController {
     
     /* Begin Calculator */
 
+    
+    /*
+     * Difference between the ! and ?
+     * A ? makes it an optional
+     * The outlets get set and stay forever
+     * an ! in the declaration says to always unwrap it
+     */
     @IBOutlet weak var feed: UILabel!
-    @IBOutlet weak var display: UILabel! // Main Display
+    @IBOutlet weak var display: UILabel!
     var userIsInTheMiddleOfTypingANumber = false
     var brain = CalculatorBrain()
 
