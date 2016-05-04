@@ -68,8 +68,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     Ghost.size = CGSize(width: 80, height: 90)
     Ghost.position = CGPoint(x: self.frame.width / 2 - Ghost.frame.width, y: self.frame.height / 2)
     
+    // Undo to flip lightning upside down
+    //Ghost.zRotation = CGFloat(M_PI)
+    
     /* Ghost physics */
-    let lightningSize = CGSize(width: 80, height: 38)
+    let lightningSize = CGSize(width: 80, height: 22)
     Ghost.physicsBody = SKPhysicsBody(rectangleOfSize: lightningSize)
     Ghost.physicsBody?.categoryBitMask = PhysicsCategory.Ghost
     Ghost.physicsBody?.collisionBitMask = PhysicsCategory.Ground | PhysicsCategory.Wall
@@ -166,7 +169,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       moveAndRemove = SKAction.sequence([movePipes, removePipes])
       
       Ghost.physicsBody?.velocity = CGVectorMake(0, 0)
-      Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 80))
+      Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
       
     } else {
       
@@ -174,7 +177,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
       } else {
         Ghost.physicsBody?.velocity = CGVectorMake(0, 0)
-        Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 80))
+        Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
       }
     }
     
@@ -209,8 +212,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     scoreNode.physicsBody?.contactTestBitMask = PhysicsCategory.Ghost
     //scoreNode.color = SKColor.blueColor()
     
-    let topWall = SKSpriteNode(imageNamed: "Wall")
-    let bottomWall = SKSpriteNode(imageNamed: "Wall")
+    let topWall = SKSpriteNode(imageNamed: "column")
+    let bottomWall = SKSpriteNode(imageNamed: "column")
     
     topWall.position = CGPoint(x: self.frame.width, y: self.frame.height / 2 + 360)
     bottomWall.position = CGPoint(x: self.frame.width, y: self.frame.height / 2 - 360)
