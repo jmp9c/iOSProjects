@@ -5,6 +5,12 @@
 //  Created by John Peden on 5/1/16.
 //  Copyright (c) 2016 John Peden. All rights reserved.
 //
+// This was made following a tutorial by Jared Davidson on youtube:
+// https://www.youtube.com/watch?v=D7ntzPFvMf0
+// Also, used images from Google.
+//
+// Columns: http://static.vecteezy.com/system/resources/previews/000/051/628/original/column-vectors.jpg
+// MTSU Logo: Any generic MTSU logo lol
 
 import SpriteKit
 
@@ -13,7 +19,6 @@ struct PhysicsCategory {
   static let Ground: UInt32 = 0x1 << 2
   static let Wall: UInt32 = 0x1 << 3
   static let Score: UInt32 = 0x1 << 4
-  
 }
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
@@ -84,9 +89,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
   }
   override func didMoveToView(view: SKView) {
-    
     createScene()
-    
   }
   
   func createButton() {
@@ -112,7 +115,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     if firstBody.categoryBitMask == PhysicsCategory.Ghost && secondBody.categoryBitMask == PhysicsCategory.Wall || firstBody.categoryBitMask == PhysicsCategory.Wall && secondBody.categoryBitMask == PhysicsCategory.Ghost {
       
-      
       enumerateChildNodesWithName("wallPair", usingBlock: ({
         (node, error) in
         node.speed = 0
@@ -123,12 +125,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         died = true
         createButton()
       }
-      
     }
     
     if firstBody.categoryBitMask == PhysicsCategory.Ghost && secondBody.categoryBitMask == PhysicsCategory.Ground || firstBody.categoryBitMask == PhysicsCategory.Ground && secondBody.categoryBitMask == PhysicsCategory.Ghost{
-     
-      
       
       enumerateChildNodesWithName("wallPair", usingBlock: ({
         (node, error) in
@@ -140,19 +139,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         died = true
         createButton()
       }
-      
     }
-    
-    
   }
   
   override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
     /* Called when a touch begins */
     if gameStarted == false {
-      
       gameStarted = true
       Ghost.physicsBody?.affectedByGravity = true
-      
       let spawn = SKAction.runBlock({
         () in
         self.createWalls()
@@ -172,15 +166,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
       
     } else {
-      
-      if died == true {
-        
+      if died == true { // empty if statement that people hat
       } else {
         Ghost.physicsBody?.velocity = CGVectorMake(0, 0)
         Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
       }
     }
-    
     
     for touch in touches {
       let location = touch.locationInNode(self)
@@ -188,10 +179,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if restartButton.containsPoint(location) {
           restartScene()
         }
-        
       }
     }
-    
   }
   
   override func update(currentTime: CFTimeInterval) {
@@ -237,7 +226,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     topWall.zRotation = CGFloat(M_PI)
     
-    
     wallPair.addChild(topWall)
     wallPair.addChild(bottomWall)
     
@@ -247,6 +235,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     wallPair.addChild(scoreNode)
     wallPair.runAction(moveAndRemove)
     self.addChild(wallPair)
-    
   }
 }
