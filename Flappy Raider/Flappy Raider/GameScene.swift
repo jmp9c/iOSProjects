@@ -163,13 +163,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
       moveAndRemove = SKAction.sequence([movePipes, removePipes])
       
       Ghost.physicsBody?.velocity = CGVectorMake(0, 0)
-      Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
+      Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 45)) // change this to change "bounciness"
       
     } else {
       if died == true { // empty if statement that people hat
       } else {
         Ghost.physicsBody?.velocity = CGVectorMake(0, 0)
-        Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 50))
+        Ghost.physicsBody?.applyImpulse(CGVectorMake(0, 45)) // change this to change "bounciness"
       }
     }
     
