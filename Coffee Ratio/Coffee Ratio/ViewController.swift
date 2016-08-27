@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     
     //find out the fraction of milliseconds to be displayed.
     
-    let fraction = UInt8(elapsedTime * 100)
+    //let fraction = UInt8(elapsedTime * 100)
     
     //add the leading zero for minutes, seconds and millseconds and store them as string constants
     

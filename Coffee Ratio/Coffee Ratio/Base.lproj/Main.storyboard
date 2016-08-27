@@ -129,9 +129,17 @@
                                 <rect key="frame" x="20" y="6" width="560" height="132"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatioLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="KgG-XH-yLA">
+                                <rect key="frame" x="20" y="8" width="560" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="A1G-Lf-h8s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="KgG-XH-yLA" firstAttribute="centerY" secondItem="19O-vU-Ql5" secondAttribute="centerY" id="0PI-Su-A91"/>
+                            <constraint firstItem="KgG-XH-yLA" firstAttribute="trailing" secondItem="19O-vU-Ql5" secondAttribute="trailing" id="2Ze-5f-atK"/>
                             <constraint firstItem="4mE-jr-c1F" firstAttribute="trailing" secondItem="Q9D-uW-0r3" secondAttribute="trailing" id="5FS-9S-Q85"/>
                             <constraint firstAttribute="bottom" secondItem="ocl-Ge-qAM" secondAttribute="bottom" constant="20" symbolic="YES" id="5bY-Pw-yFv"/>
                             <constraint firstItem="FpN-tT-0Gf" firstAttribute="top" secondItem="nJB-7c-GFy" secondAttribute="top" id="7js-xz-IQ2"/>
@@ -158,6 +166,7 @@
                             <constraint firstItem="led-Ie-w3n" firstAttribute="top" secondItem="19O-vU-Ql5" secondAttribute="bottom" constant="8" symbolic="YES" id="SxO-mI-uPw"/>
                             <constraint firstItem="s5A-cP-KRY" firstAttribute="centerX" secondItem="FpN-tT-0Gf" secondAttribute="centerX" id="TK1-Ru-z52"/>
                             <constraint firstItem="Q9D-uW-0r3" firstAttribute="trailing" secondItem="s5A-cP-KRY" secondAttribute="trailing" id="UfL-vO-jJw"/>
+                            <constraint firstItem="KgG-XH-yLA" firstAttribute="leading" secondItem="19O-vU-Ql5" secondAttribute="leading" id="a7n-AS-aal"/>
                             <constraint firstItem="led-Ie-w3n" firstAttribute="leading" secondItem="Q9D-uW-0r3" secondAttribute="leading" id="aUo-Qm-4zC"/>
                             <constraint firstItem="hXg-ZT-Tjg" firstAttribute="leading" secondItem="led-Ie-w3n" secondAttribute="trailing" constant="8" symbolic="YES" id="eLs-bA-EwC"/>
                             <constraint firstItem="0Pi-SW-gnB" firstAttribute="leading" secondItem="5FD-Tl-Mxw" secondAttribute="leading" id="eTl-zu-tE8"/>
@@ -187,4 +196,7 @@
             <point key="canvasLocation" x="380" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RatioLogo.png" width="1000" height="1000"/>
+    </resources>
 </document>

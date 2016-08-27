@@ -49,41 +49,41 @@ class FoldingTableViewController: UITableViewController {
 //    return 0
 //  }
   
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
     return 3
   }
   
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return cellHeights[indexPath.row]
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return cellHeights[(indexPath as NSIndexPath).row]
   }
   
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    let cell = tableView.cellForRowAtIndexPath(indexPath) as! FoldingCell
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let cell = tableView.cellForRow(at: indexPath) as! FoldingCell
     
     var duration = 0.0
-    if cellHeights[indexPath.row] == kCloseCellHeight { // open cell
-      cellHeights[indexPath.row] = kOpenCellHeight
+    if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight { // open cell
+      cellHeights[(indexPath as NSIndexPath).row] = kOpenCellHeight
       cell.selectedAnimation(true, animated: true, completion: nil)
       duration = 0.5
     } else {// close cell
-      cellHeights[indexPath.row] = kCloseCellHeight
+      cellHeights[(indexPath as NSIndexPath).row] = kCloseCellHeight
       cell.selectedAnimation(false, animated: true, completion: nil)
       duration = 1.1
     }
     
-    UIView.animateWithDuration(duration, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
+    UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut, animations: { () -> Void in
       tableView.beginUpdates()
       tableView.endUpdates()
       }, completion: nil)
   }
   
-  override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     
     if cell is FoldingCell {
       let foldingCell = cell as! FoldingCell
       
-      if cellHeights[indexPath.row] == kCloseCellHeight {
+      if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight {
         foldingCell.selectedAnimation(false, animated: false, completion:nil)
       } else {
         foldingCell.selectedAnimation(true, animated: false, completion: nil)
@@ -91,9 +91,9 @@ class FoldingTableViewController: UITableViewController {
     }
   }
   
-   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCellWithIdentifier("FoldingCell", forIndexPath: indexPath) as! CustomCell
-    cell.hLabel.text = sections[indexPath.row]
+   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for: indexPath) as! CustomCell
+    cell.hLabel.text = sections[(indexPath as NSIndexPath).row]
     cell.cLabel.text = cell.hLabel.text
    // Configure the cell...
    

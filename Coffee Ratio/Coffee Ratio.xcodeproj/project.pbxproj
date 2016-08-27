@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472C7ECA1D07482400B8AB5B /* RatioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 472C7EC91D07482400B8AB5B /* RatioLogo.png */; };
 		4732BEE11CFAA48E0021E4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4732BEE01CFAA48E0021E4F4 /* AppDelegate.swift */; };
 		4732BEE31CFAA48E0021E4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4732BEE21CFAA48E0021E4F4 /* ViewController.swift */; };
 		4732BEE61CFAA48E0021E4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4732BEE41CFAA48E0021E4F4 /* Main.storyboard */; };
 		4732BEE81CFAA48E0021E4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4732BEE71CFAA48E0021E4F4 /* Assets.xcassets */; };
 		4732BEEB1CFAA48E0021E4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4732BEE91CFAA48E0021E4F4 /* LaunchScreen.storyboard */; };
 		4732BEF31CFAAFAA0021E4F4 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4732BEF21CFAAFAA0021E4F4 /* background.png */; };
+		4732BF1B1CFE2F6A0021E4F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4732BF1A1CFE2F6A0021E4F4 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		472C7EC91D07482400B8AB5B /* RatioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RatioLogo.png; sourceTree = "<group>"; };
 		4732BEDD1CFAA48E0021E4F4 /* Coffee Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4732BEE01CFAA48E0021E4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4732BEE21CFAA48E0021E4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		4732BEEA1CFAA48E0021E4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4732BEEC1CFAA48E0021E4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4732BEF21CFAAFAA0021E4F4 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		4732BF1A1CFE2F6A0021E4F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4732BEE21CFAA48E0021E4F4 /* ViewController.swift */,
 				4732BEE41CFAA48E0021E4F4 /* Main.storyboard */,
 				4732BEE71CFAA48E0021E4F4 /* Assets.xcassets */,
+				472C7EC91D07482400B8AB5B /* RatioLogo.png */,
+				4732BF1A1CFE2F6A0021E4F4 /* logo.png */,
 				4732BEF21CFAAFAA0021E4F4 /* background.png */,
 				4732BEE91CFAA48E0021E4F4 /* LaunchScreen.storyboard */,
 				4732BEEC1CFAA48E0021E4F4 /* Info.plist */,
@@ -127,8 +133,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4732BEEB1CFAA48E0021E4F4 /* LaunchScreen.storyboard in Resources */,
+				4732BF1B1CFE2F6A0021E4F4 /* logo.png in Resources */,
 				4732BEF31CFAAFAA0021E4F4 /* background.png in Resources */,
 				4732BEE81CFAA48E0021E4F4 /* Assets.xcassets in Resources */,
+				472C7ECA1D07482400B8AB5B /* RatioLogo.png in Resources */,
 				4732BEE61CFAA48E0021E4F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
