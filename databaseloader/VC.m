@@ -19,8 +19,12 @@
   [super viewDidLoad];
   
   JMPDataFetcher *dataFetcher = [[JMPDataFetcher alloc] init];
-  NSMutableArray *json = [[NSMutableArray alloc] init]; 
+  NSMutableArray *json = [[NSMutableArray alloc] init];
+  
+  [dataFetcher updateDatabaseWithKisses:100 withHugs:100 withListens:100 withDinners:100];
   json = [dataFetcher fetchJSON:@"http://www.johnmahlonpeden.com/service.php"];
+  
+  
 
   _kisses.text = [NSString stringWithFormat:@"Kisses: %@", json[0][@"kisses"]];
   _hugs.text = [NSString stringWithFormat:@"Hugs: %@", json[0][@"hugs"]];

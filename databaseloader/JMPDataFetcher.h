@@ -13,6 +13,9 @@
 
 
 - (NSMutableArray *)fetchJSON:(NSString *)url;
+- (void)updateDatabaseWithKisses:(int)k withHugs: (int)h withListens: (int)l withDinners: (int)d;
+
+
 
 
 @end
