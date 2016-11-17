@@ -22,10 +22,10 @@
   return json;
 }
 
-- (void)updateDatabaseWithPhrase:(NSString*)phrase withUser:(NSString *)user withAction:(NSString *)action {
+- (void)updateDatabaseWithPhrase:(NSString*)phrase withUser:(NSString *)user withPassword: (NSString *)pw withAction:(NSString *)action {
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.johnmahlonpeden.com/upload_phrase.php"]];
   request.HTTPMethod = @"POST";
-  NSString *postString = [NSString stringWithFormat:@"phrase=%@&user=%@&action=%@", phrase, user, action];
+  NSString *postString = [NSString stringWithFormat:@"phrase=%@&user=%@&action=%@&password=%@", phrase, user, action, pw];
   request.HTTPBody = [postString dataUsingEncoding:NSUTF8StringEncoding];
   
   NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request];

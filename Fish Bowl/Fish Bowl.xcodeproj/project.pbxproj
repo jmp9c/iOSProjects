@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470988771D78A1FA0021D041 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470988761D78A1FA0021D041 /* ViewModel.swift */; };
 		47B7922F1D7245B2001ED85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7922E1D7245B2001ED85D /* AppDelegate.swift */; };
 		47B792311D7245B2001ED85D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B792301D7245B2001ED85D /* ViewController.swift */; };
 		47B792341D7245B2001ED85D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47B792321D7245B2001ED85D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470988761D78A1FA0021D041 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		47B7922B1D7245B2001ED85D /* Fish Bowl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fish Bowl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B7922E1D7245B2001ED85D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47B792301D7245B2001ED85D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				47B7922E1D7245B2001ED85D /* AppDelegate.swift */,
 				47B792301D7245B2001ED85D /* ViewController.swift */,
+				470988761D78A1FA0021D041 /* ViewModel.swift */,
 				47B792451D724E48001ED85D /* FishBowlUser.swift */,
 				47B792321D7245B2001ED85D /* Main.storyboard */,
 				47B792351D7245B2001ED85D /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470988771D78A1FA0021D041 /* ViewModel.swift in Sources */,
 				47B792311D7245B2001ED85D /* ViewController.swift in Sources */,
 				47B792431D7245C7001ED85D /* JMPDataFetcher.m in Sources */,
 				47B792461D724E48001ED85D /* FishBowlUser.swift in Sources */,
@@ -326,6 +330,7 @@
 				47B7923F1D7245B2001ED85D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

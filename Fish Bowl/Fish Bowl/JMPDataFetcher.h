@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface JMPDataFetcher : NSObject
-
-
-
 - (NSMutableArray *)fetchJSON:(NSString *)url;
-- (void)updateDatabaseWithPhrase:(NSString*)phrase withUser:(NSString*)user withAction:(NSString*)action;
+- (void)updateDatabaseWithPhrase:(NSString*)phrase withUser:(NSString*)user withPassword: (NSString *)pw withAction:(NSString*)action;
 
 @end

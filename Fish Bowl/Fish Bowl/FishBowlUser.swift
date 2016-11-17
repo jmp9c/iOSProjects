@@ -11,13 +11,12 @@ import Foundation
 class FishBowlUser {
   
   var username: String!
-  var questions: [String]!
+  var phrases: [String]!
+  var password: String!
   
-  
-  
-  
-  
-  
-  
-  
+  init(username u: String, phrases p: [String], password pw: String) {
+    username = u
+    phrases = p
+    password = pw 
+  }
 }
