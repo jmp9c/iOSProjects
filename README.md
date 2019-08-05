@@ -1,6 +1,4 @@
 # iOSProjects
-Projects from 100 Days of Swift and other things
+Old projects I worked on to learn iOS Development. 
 
-1. Counter
-2. Tip Calculator
-3. GPA Calculator
+Archiving this one!
